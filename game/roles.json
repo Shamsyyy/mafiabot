@@ -1,0 +1,27 @@
+{
+
+    "civilian": {
+        "display_name": "Мирный житель",
+        "sleepless": false,
+        "hostile": false,
+        "minPlayers": 0,
+        "necessary": true,
+        "basic": true 
+    },
+    "mafia": {
+        "display_name": "Мафия",    
+        "sleepless": true,
+        "hostile": true,
+        "minPlayers": 0,
+        "necessary": true
+    },
+    "detective": {
+        "display_name": "Комиссар",
+        "sleepless": true,
+        "hostile": false,
+        "minPlayers": 8,
+        "necessary": false
+    }
+
+
+}
