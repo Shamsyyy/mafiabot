@@ -3,7 +3,7 @@ import random
 import json
 
 # Path to roles.json
-ROLECONFIG = "C:\\Users\\Николай\\Desktop\\projects\\mafiabot\\game\\roles.json"
+ROLECONFIG = ""
 
 def generate_code(length):
     dic = string.ascii_uppercase + string.digits
