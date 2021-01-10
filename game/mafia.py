@@ -3,7 +3,7 @@ import random
 import json
 
 # Path to roles.json
-ROLECONFIG = ""
+ROLECONFIG = "C:\\Users\\Николай\\Desktop\\projects\\mafiabot\\game\\roles.json"
 
 def generate_code(length):
     dic = string.ascii_uppercase + string.digits
@@ -188,10 +188,8 @@ class Game:
     def _checkRoles(self):
         ready = True
         for role in self.roles:
-            if role == self.basicRole:
-                continue
             roleObj = self.roles[role]
-            if not roleObj.amount and roleObj.necessary:
+            if not roleObj.amount and roleObj.necessary and roleObj != self.basicRole:
                 ready = False
         self.ready = ready
 
@@ -208,7 +206,7 @@ for i in range(10):
 # Setting the amount of players with non-basic roles.
 # TODO: Use object instead of role name
 # TODO: Game configs
-game.setRole('mafia', 3)
+game.setRole('mafia', 0)
 game.setRole('detective', 3)
 
 # Assign order numbers and roles according to game settings.
