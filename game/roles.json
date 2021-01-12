@@ -21,6 +21,13 @@
         "hostile": false,
         "minPlayers": 8,
         "necessary": false
+    },
+    "boss": {
+        "display_name": "Дон Мафии",
+        "sleepless": true,
+        "hostile": true,
+        "minPlayers": 8,
+        "necessary": false
     }
 
 

@@ -191,23 +191,26 @@ class Game:
             roleObj = self.roles[role]
             if not roleObj.amount and roleObj.necessary and roleObj != self.basicRole:
                 ready = False
+        if self.size < self.minPlayers:
+            ready = False
+
         self.ready = ready
 
 
 
-### Test unit ###
+# ### Test unit ###
 
-game = Game()
+# game = Game()
 
-# Adding dummies
-for i in range(10):
-    game.addPlayer(Player(i, generate_code(6)))
+# # Adding dummies
+# for i in range(10):
+#     game.addPlayer(Player(i, generate_code(6)))
 
-# Setting the amount of players with non-basic roles.
-# TODO: Use object instead of role name
-# TODO: Game configs
-game.setRole('mafia', 0)
-game.setRole('detective', 3)
+# # Setting the amount of players with non-basic roles.
+# # TODO: Use object instead of role name
+# # TODO: Game configs
+# game.setRole('mafia', 0)
+# game.setRole('detective', 3)
 
-# Assign order numbers and roles according to game settings.
-game.assignRoles()
+# # Assign order numbers and roles according to game settings.
+# game.assignRoles()
