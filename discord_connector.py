@@ -13,6 +13,8 @@ colors = {
     'boss': 0x5e2358
 }
 
+# Testing notifications role
+
 avail_roles = ['boss', 'detective', 'mafia']
 
 rolecount = {
